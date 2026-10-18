@@ -1,0 +1,7 @@
+{
+  "name": "Care D Clinic - ปรึกษาหมออนุชาฟรี เรื่องเส้นฟอกไต",
+  "description": "แคมเปญปรึกษาฟรีผ่าน Telemedicine เรื่องเส้นฟอกไต โดย นพ.อนุชา สำหรับคนไข้ฟอกไตที่ต้องการทำเส้นใหม่ หรือเส้นเดิมมีปัญหา ตีบ ตัน ปวด บวม พร้อมรับโค้ด cared2027",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans Thai', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f8faf8;
+    color: #1e293b;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Noto Sans Thai', sans-serif;
+    letter-spacing: normal;
+  }
+}
+
+.font-kanit {
+  font-family: 'Kanit', sans-serif;
+}
+
+.font-noto {
+  font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.font-prompt {
+  font-family: 'Prompt', sans-serif;
+}
+
+/* Eye-catching animations for campaign highlights */
+@keyframes textShimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes attentionPulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 2px rgba(254, 240, 138, 0.4));
+  }
+  50% {
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 12px rgba(254, 240, 138, 0.9));
+  }
+}
+
+@keyframes badgeGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(254, 240, 138, 0.5), 0 0 15px rgba(250, 204, 21, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(254, 240, 138, 0), 0 0 25px rgba(250, 204, 21, 0.7);
+  }
+}
+
+.animate-text-shimmer {
+  background: linear-gradient(
+    90deg,
+    #fef08a 0%,
+    #ffffff 25%,
+    #fde047 50%,
+    #ffffff 75%,
+    #fef08a 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textShimmer 3.5s linear infinite;
+}
+
+.animate-attention {
+  animation: attentionPulse 2.2s ease-in-out infinite;
+}
+
+.animate-badge-glow {
+  animation: badgeGlow 2s ease-in-out infinite;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
